@@ -1,0 +1,519 @@
+:root {
+  --accent1: #4BC3F2;
+  --accent2: #1a73e8;
+  --gradient: linear-gradient(90deg, var(--accent1), var(--accent2));
+  --card-shadow: 0 6px 20px rgba(15, 15, 20, 0.06);
+  --muted: #666;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+/*--------HEADER---------*/
+body {
+  font-family: Inter, "Poppins", Arial, sans-serif;
+  background-color: #f2f2f2;
+
+}
+
+header {
+  background: #f5f7fa;
+  box-shadow: 0 2px 12px rgba(12, 12, 15, 0.06);
+
+}
+
+.myContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #162059;
+  border-bottom: 1px solid;
+  border-color: #7e7e7e;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  color: #ffffff;
+  gap: 30px;
+  margin-left: 0px;
+  font-size: 14px;
+
+}
+
+nav a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  padding-left: 10px;
+  font-weight: 500;
+  margin-top: 18px;
+
+}
+
+nav a .link-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+nav a .underline {
+  display: block;
+  height: 2px;
+  width: 0;
+  background: var(--gradient);
+  border-radius: 2px;
+  transition: width .25s ease;
+
+}
+
+nav a:hover .underline {
+  width: 100%;
+}
+
+.links {
+  padding-left: 0px;
+}
+
+.logo-space img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  margin-left: 40px;
+
+}
+
+.myForm {
+  padding: 7px;
+  width: 100%;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  margin-right: 150px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #fff;
+  background-color: #fff;
+
+}
+
+.search-box {
+  position: relative;
+  width: 24%;
+  margin-top: 19px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 315px;
+  top: 30%;
+  transform: translateY(-50%);
+  color: #162059;
+  /* pode trocar para sua paleta */
+  pointer-events: none;
+  /* não interfere no clique */
+}
+
+.btns {
+  margin-left: 70px;
+  align-items: center;
+  display: flex;
+
+}
+
+.login-btn {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  margin-right: 50px;
+  border-radius: 100px;
+  border-color: none;
+  border-width: 0px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0f1741
+}
+
+.anunciar-btn {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  border-radius: 100px;
+  border-color: none;
+  border-width: 0px;
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bolder;
+
+}
+
+/*-----------------*/
+
+/*-------MAIN------*/
+
+.category {
+  margin-left: 100px;
+  margin-top: 15px;
+
+}
+
+.btn-primary {
+  background-color: #162059;
+  border-color: #ffffff;
+  border-radius: 13px;
+  border-width: 2px;
+  padding: 5px 20px;
+  margin-left: 1px;
+  font-weight: bolder;
+
+}
+
+.btn-primary img {
+  width: 20px;
+  height: 20px;
+
+}
+
+.hero {
+  margin-left: 80px;
+  padding: 30px 30px;
+  border-radius: 12px;
+  display: flex;
+  gap: 36px;
+  align-items: center;
+
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 62px;
+  margin-bottom: 12px;
+  text-decoration: underline solid 3px #1a73e8;
+
+}
+
+.slogan {
+  font-size: 20px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 680px;
+  line-height: 1.5;
+}
+
+.hero-right {
+  margin-right: 60px;
+  margin-top: 0px;
+
+}
+
+.carousel-caption {
+  bottom: 50%;
+  transform: translate(0, 50%);
+
+}
+
+#carouselExampleCaptions img {
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+}
+
+
+.products h2 {
+  margin-left: 70px;
+  padding: 0px 30px;
+  margin-top: 60px;
+}
+
+/* Mini Resumo do Site */
+
+.inicio {
+  background: #fff;
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 105px;
+  max-width: 87.5%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Cards Produtos */
+
+.products h2 {
+  margin-left: 80px;
+}
+
+.catalogo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-height: 85vh;
+  padding-right: 10px;
+}
+
+.catalogo-product-first {
+  background: #fff;
+  border-radius: 12px;
+  margin-left: 105px;
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+  max-width: 15%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+.catalogo-product-first img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.catalogo-product {
+  background: #fff;
+  border-radius: 12px;
+  margin-left: 45px;
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+  max-width: 15%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+.catalogo-product img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.catalogo-info {
+  margin-right: 20px;
+}
+
+.catalogo-info h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.catalogo-info h5 {
+  padding: 2px;
+  font-size: 14px;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.catalogo-info p {
+  padding: 2px;
+  font-size: 10px;
+  opacity: 0.8;
+
+}
+
+
+/*-----------------*/
+/* -----FOOTER_____ */
+
+.logo-footer {
+  width: 5px;
+  height: 0px;
+}
+
+/* ---------------- */
+
+/*------RESPONNSIVIDADE------ */
+
+@media (max-width: 430px) {
+
+  /* Títulos das categorias */
+  .products h2 {
+    margin-left: 0 !important;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* Contêiner das listagens */
+  .catalogo-container {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 20px !important;
+    align-items: center;
+    max-height: none !important;
+    padding-right: 0;
+  }
+
+  /* Primeiro card */
+  .catalogo-product-first {
+    max-width: 90% !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  /* Demais cards */
+  .catalogo-product {
+    max-width: 90% !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  /* Ajuste das imagens */
+  .catalogo-product-first img,
+  .catalogo-product img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Bloco inicio (mini resumo) */
+  .inicio {
+    flex-direction: column !important;
+    margin-left: 0 !important;
+    max-width: 95% !important;
+    margin: 20px auto !important;
+  }
+}
+
+/* ============================================
+   HEADER MOBILE — aparece apenas no celular
+   ============================================ */
+
+.header-mobile {
+  display: none;
+  background: #162059;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+}
+
+.header-mobile .mobile-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* ----------------- LINHA 1 ----------------- */
+.header-mobile .row-1 {
+  justify-content: space-between;
+}
+
+.header-mobile img {
+  width: 55px;
+  height: 55px;
+}
+
+.mobile-search {
+  position: relative;
+  width: 75%;
+}
+
+.mobile-search input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.mobile-search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #162059;
+}
+
+/* ----------------- LINHA 2 ----------------- */
+.header-mobile .row-2 {
+  justify-content: space-between;
+}
+
+.header-mobile .row-2 a {
+  text-align: center;
+  flex: 1;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.header-mobile .row-2 i {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ----------------- LINHA 3 ----------------- */
+.header-mobile .row-3 {
+  justify-content: space-between;
+}
+
+.mobile-login,
+.mobile-anunciar {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 100px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.mobile-login {
+  background: #fff;
+  color: #162059;
+  margin-right: 10px;
+}
+
+.mobile-anunciar {
+  background: #1a73e8;
+  color: #fff;
+}
+
+/* ============================================
+   MOSTRAR APENAS NO MOBILE
+   ============================================ */
+@media (max-width: 430px) {
+  
+  /* Esconde header desktop */
+  .myContainer {
+    display: none !important;
+  }
+
+  /* Mostra header mobile */
+  .header-mobile {
+    display: block !important;
+  }
+}
